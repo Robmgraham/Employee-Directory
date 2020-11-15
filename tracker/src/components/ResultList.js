@@ -11,9 +11,7 @@ import "./ResultList.css";
    
     <table>   
       
-        {props.results
-        
-        .map(result => (
+        {props.results.map(result => (
           
           <tr> 
             <td><img alt="" className="img-fluid" src={result.picture.thumbnail}/></td> 
