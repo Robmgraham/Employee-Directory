@@ -14,6 +14,7 @@ class SearchResultContainer extends Component {
   // When this component mounts, search the  API or pictures of kittens
   componentDidMount() {
     this.searchPeople("A");
+    ;
   }
 
   searchPeople = query => {

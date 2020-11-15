@@ -12,7 +12,7 @@ import "./ResultList.css";
     <table>   
       
         {props.results
-        .sort(compareNames)
+        
         .map(result => (
           
           <tr> 
@@ -20,7 +20,7 @@ import "./ResultList.css";
             <td>{result.name.last},{result.name.first}</td> 
             <td> {result.phone}</td>
             <td> {result.email}</td>
-            <td> {result.dob.date}</td>       
+            <td> {result.dob.date.slice(0,10)}</td>       
          </tr>
          
       ))}
